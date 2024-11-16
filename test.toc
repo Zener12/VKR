@@ -1,0 +1,8 @@
+\babel@toc {russian}{}\relax 
+\contentsline {section}{Аннотация}{2}{}%
+\contentsline {section}{Введение}{3}{}%
+\contentsline {section}{Глава 1}{4}{}%
+\contentsline {section}{Глава 2}{5}{}%
+\contentsline {section}{Глава 3}{6}{}%
+\contentsline {section}{Заключение}{7}{}%
+\contentsline {section}{Список использованных источников}{8}{}%

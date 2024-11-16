@@ -1,0 +1,105 @@
+/* Основные стили */
+body {
+    font-family: 'Roboto', Arial, sans-serif; /* Шрифт Google Fonts */
+    background: linear-gradient(135deg, #f5f7fa, #d6e8f0); /* Пастельный фон с градиентом */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Контейнер */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Шапка */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    color: #4CAF70; /* Зеленый цвет */
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Стили для формы */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Группы форм */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"], textarea {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #f8f9fa; /* Светлый фон для полей */
+}
+
+/* Расширяющиеся поля */
+textarea {
+    resize: vertical;
+    max-height: 300px; /* Ограничение высоты */
+}
+
+/* При фокусе */
+input[type="text"]:focus, textarea:focus {
+    border-color: #4CAF70;
+    box-shadow: 0 0 8px rgba(76, 175, 112, 0.2);
+}
+
+/* Кнопка */
+.btn {
+    padding: 15px;
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: #4CAF70;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Подвал */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0;
+}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генератор LaTeX (ГОСТ)</title>
+    <!-- Подключение шрифта Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Шапка -->
+        <header>
+            <h1>📄 Генератор LaTeX</h1>
+            <p>Легко и быстро оформляйте ВКР по ГОСТ</p>
+        </header>
+
+        <!-- Форма для ввода данных -->
+        <form method="post">
+            <div class="form-group">
+                <label for="name">Название работы:</label>
+                <input type="text" id="name" name="name" placeholder="Введите название работы" required>
+            </div>
+
+            <div class="form-group">
+                <label for="annotation">Аннотация:</label>
+                <textarea id="annotation" name="annotation" rows="4" placeholder="Введите текст аннотации" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="intro">Введение:</label>
+                <textarea id="intro" name="intro" rows="4" placeholder="Введите текст введения" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="chapter1">Глава 1:</label>
+                <textarea id="chapter1" name="chapter1" rows="6" placeholder="Введите текст первой главы" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="chapter2">Глава 2:</label>
+                <textarea id="chapter2" name="chapter2" rows="6" placeholder="Введите текст второй главы" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="chapter3">Глава 3:</label>
+                <textarea id="chapter3" name="chapter3" rows="6" placeholder="Введите текст третьей главы" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="conclusion">Заключение:</label>
+                <textarea id="conclusion" name="conclusion" rows="4" placeholder="Введите текст заключения" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="references">Список литературы:</label>
+                <textarea id="references" name="references" rows="4" placeholder="Введите список литературы" required></textarea>
+            </div>
+
+            <!-- Кнопка отправки -->
+            <button type="submit" class="btn">📂 Сгенерировать LaTeX</button>
+        </form>
+
+        <!-- Подвал -->
+        <footer>
+            <p>Создано с ❤️ для оформления ВКР по ГОСТ</p>
+        </footer>
+    </div>
+</body>
+</html>
+
+<!-- CSS -->
+
+<style>
+
+/* Основные стили */
+body {
+    font-family: 'Roboto', Arial, sans-serif; /* Шрифт Google Fonts */
+    background: linear-gradient(135deg, #f5f7fa, #d6e8f0); /* Пастельный фон с градиентом */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Контейнер */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Шапка */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    color: #4CAF70; /* Зеленый цвет */
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Стили для формы */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Группы форм */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"], textarea {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #f8f9fa; /* Светлый фон для полей */
+}
+
+/* Расширяющиеся поля */
+textarea {
+    resize: vertical;
+    max-height: 300px; /* Ограничение высоты */
+}
+
+/* При фокусе */
+input[type="text"]:focus, textarea:focus {
+    border-color: #4CAF70;
+    box-shadow: 0 0 8px rgba(76, 175, 112, 0.2);
+}
+
+/* Кнопка */
+.btn {
+    padding: 15px;
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: #4CAF70;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Подвал */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+</style>
